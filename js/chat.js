@@ -16,7 +16,7 @@ window.onload = function () {
         this.scrollAfterShow = false;
         this.audioNotification = null;
         this.transition = this.checkTransition();
-        this.socket = io.connect("http://jchat-serdnah2.rhcloud.com", {'sync disconnect on unload': true});
+        this.socket = io.connect("http://jchatserver-serdnah2.rhcloud.com/", {'sync disconnect on unload': true});
 
     };
 
