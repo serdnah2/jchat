@@ -1,0 +1,35 @@
+@colorBackground1: #FFFFFF;
+@colorBackground2: #497495;
+@colorBackground3: #f2f6fa;
+@colorBackground4: #6690b0;
+@colorBackground5: #f0f0f0;
+@colorFonts1: #000000;
+@colorFonts2: #FFFFFF;
+@colorFonts3: gray;
+@colorBorder1: #E9EBED;
+@colorBorder2: #385973;
+
+#wrapper{background-color: @colorBackground1}
+#container-message{background-color: @colorBackground5}
+#header{border-bottom: 1px solid @colorBorder1; background: @colorBackground2; color: @colorFonts2}
+#container-users-online{border-right: 2px solid @colorBorder1}
+#container-new-messages{border-left: 2px solid @colorBorder1}
+#container-send-message{border-top: 1px solid @colorBorder1}
+.container-user, .container-user .container-typing{color: @colorFonts3}
+.container-info-user-name{color: @colorFonts1}
+.container-typing{color: @colorBackground4}
+.total-message{background: @colorBackground2; color: @colorFonts2}
+.input-custom input{border: 1px solid @colorBackground4}
+.input-custom input:focus{outline: 0}
+.scroller-down{background: @colorBackground4; color: @colorFonts2}
+.wrapper-user + .wrapper-user{border-top: 1px solid @colorBorder1}
+#please-select-chat div, #no-users-online div{color: @colorFonts3}
+@media (min-width: 700px) {
+    .container-user:hover{background: @colorBackground3}
+    .container-user.selected, .container-user.selected:hover,
+    .container-user.selected .container-info-user-name, 
+    .container-user.selected:hover .container-info-user-name,
+    .container-user.selected .container-typing, 
+    .container-user.selected:hover .container-typing{background: @colorBackground4; color: @colorFonts2}
+    #wrapper, #container-message{background-color: @colorBackground1}
+}

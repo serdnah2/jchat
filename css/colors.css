@@ -1,0 +1,69 @@
+#wrapper {
+  background-color: #ffffff;
+}
+#container-message {
+  background-color: #f0f0f0;
+}
+#header {
+  border-bottom: 1px solid #e9ebed;
+  background: #497495;
+  color: #ffffff;
+}
+#container-users-online {
+  border-right: 2px solid #e9ebed;
+}
+#container-new-messages {
+  border-left: 2px solid #e9ebed;
+}
+#container-send-message {
+  border-top: 1px solid #e9ebed;
+}
+.container-user,
+.container-user .container-typing {
+  color: #808080;
+}
+.container-info-user-name {
+  color: #000000;
+}
+.container-typing {
+  color: #6690b0;
+}
+.total-message {
+  background: #497495;
+  color: #ffffff;
+}
+.input-custom input {
+  border: 1px solid #6690b0;
+}
+.input-custom input:focus {
+  outline: 0;
+}
+.scroller-down {
+  background: #6690b0;
+  color: #ffffff;
+}
+.wrapper-user + .wrapper-user {
+  border-top: 1px solid #e9ebed;
+}
+#please-select-chat div,
+#no-users-online div {
+  color: #808080;
+}
+@media (min-width: 700px) {
+  .container-user:hover {
+    background: #f2f6fa;
+  }
+  .container-user.selected,
+  .container-user.selected:hover,
+  .container-user.selected .container-info-user-name,
+  .container-user.selected:hover .container-info-user-name,
+  .container-user.selected .container-typing,
+  .container-user.selected:hover .container-typing {
+    background: #6690b0;
+    color: #ffffff;
+  }
+  #wrapper,
+  #container-message {
+    background-color: #ffffff;
+  }
+}

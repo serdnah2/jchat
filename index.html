@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jChat</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+        <link type="text/css" rel="stylesheet" href="css/chat.css"/>
+        <link type="text/css" rel="stylesheet" href="css/colors.css"/>
+        <script src="http://jchat-serdnah2.rhcloud.com/socket.io/socket.io.js"></script>
+        <script src="js/jquery-1.3.min.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script src="js/moment-with-langs.js"></script>
+        <script src="js/chat.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="offlineOver"></div>
+            <div id="header">
+                <div id="icon-view-users" class="container-icon pa">
+                    <div class="icon-item">
+                        <i class="fa fa-chevron-left"></i>
+                        <span id="new-messages-back"></span>
+                    </div>
+                </div>
+                <div id="header-title">jChat</div>
+            </div>
+            <div id="container-users-and-chats" class="pr">
+                <div id="enter-username" class="dt">
+                    <div class="dtc">
+                        <div id="container-form-username" class="text-center">
+                            <form>
+                                <div id="all-icons-chat">
+                                    <span class="select-gender" data-icon="C01">
+                                        <img src="img/faces/C01.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="F04">
+                                        <img src="img/faces/F04.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="G05">
+                                        <img src="img/faces/G05.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="K02">
+                                        <img src="img/faces/K02.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="M04">
+                                        <img src="img/faces/M04.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="FC01">
+                                        <img src="img/faces/FC01.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="FI02">
+                                        <img src="img/faces/FI02.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="FD04">
+                                        <img src="img/faces/FD04.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="FE01">
+                                        <img src="img/faces/FE01.png" alt="icon" width="50"/>
+                                    </span>
+                                    <span class="select-gender" data-icon="FH02">
+                                        <img src="img/faces/FH02.png" alt="icon" width="50"/>
+                                    </span>
+                                </div>
+                                <div class="input-custom">
+                                    <input type="text" placeholder="Username"/>
+                                </div>
+                                <input type="submit" class="input-custom button-submit" value="Enter"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="container-users-online">
+                    <div id="no-users-online" class="dt">
+                        <div class="dtc">No online users</div>
+                    </div>
+                    <div class="wrapperScroll">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+                <div id="container-message" class="pa"></div>
+                <div id="please-select-chat" class="dt">
+                    <div class="dtc">Please select a chat to start messaging</div>
+                </div>
+            </div>
+            <div id="container-send-message">
+                <div id="container-new-messages">
+                    <form>
+                        <div id="form-new-message">
+                            <div class="input-custom"><input type="text" /></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
