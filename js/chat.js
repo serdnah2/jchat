@@ -148,18 +148,20 @@ window.onload = function () {
             }
         });
 
-        $('#form-new-message input').keypress(function () {
-            if (!self.typingCreated) {
-                self.typingCreated = true;
-                self.typingEvent();
-            }
-            clearTimeout(self.timeOutTyping);
-            self.timeOutTyping = setTimeout(function () {
-                if (self.typingCreated) {
+        $('#form-new-message input').keypress(function (e) {
+            if (e.which != 13) {
+                if (!self.typingCreated) {
+                    self.typingCreated = true;
                     self.typingEvent();
-                    self.typingCreated = false;
                 }
-            }, 400);
+                clearTimeout(self.timeOutTyping);
+                self.timeOutTyping = setTimeout(function () {
+                    if (self.typingCreated) {
+                        self.typingEvent();
+                        self.typingCreated = false;
+                    }
+                }, 400);
+            }
         });
     };
 
