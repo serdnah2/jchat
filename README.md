@@ -5,4 +5,4 @@ Basic Chat coded with Nodejs and Socket.io
 
 You can see the server code [here](https://github.com/serdnah2/jchat_server)
 
-[Demo](projects.innovacenter.co/jchat) page 
+[Demo](http://projects.innovacenter.co/jchat) page 
