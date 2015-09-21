@@ -120,7 +120,7 @@ window.onload = function () {
                 };
                 self.createNewMessage(data, true);
                 self.socket.emit("privateMessage", data);
-                $('#' + userId + ' .viewed').removeClass('visible');
+                $('#' + userId + ' .viewed, [data-id="' + userId + '"] .viewed').removeClass('visible');
                 if (self.typingCreated) {
                     self.typingEvent();
                     self.typingCreated = false;
